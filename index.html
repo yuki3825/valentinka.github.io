@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>С 14 февраля</title>
+    <title>С 14 февраля, Аля!</title>
     <style>
         body {
             margin: 0;
@@ -24,20 +24,22 @@
             color: #fff;
             z-index: 2;
             pointer-events: none;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         h1 {
             font-size: 8vmin;
             margin: 0 20px;
             text-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
-            animation: pulse 2s ease-in-out infinite;
         }
 
         p {
             font-size: 4vmin;
             margin: 15px 0 0;
             text-shadow: 0 0 10px rgba(255, 20, 147, 0.8);
-            animation: float 3s ease-in-out infinite;
         }
 
         canvas {
@@ -56,10 +58,7 @@
             z-index: 1;
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
+
 
         @keyframes float {
             0%, 100% { transform: translateY(0); }
@@ -70,8 +69,8 @@
 </head>
 <body>
     <div id="greeting">
-        <h1>С Днём Святого Валентина 💖</h1>
-        <p>Любви и радости каждое мгновение!</p>
+        <h1>С Днём Святого Валентина, Аля! 💖</h1>
+        <p>Пусть каждый твой день будет наполнен любовью и радостью!</p>
     </div>
     <div class="hearts"></div>
     <canvas id="canvas"></canvas>
